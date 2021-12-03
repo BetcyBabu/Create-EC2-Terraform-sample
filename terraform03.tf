@@ -7,7 +7,7 @@ provider "aws" {
 
 resource "aws_key_pair" "newkey" {
   key_name   = "newkey"
-  public_key = file("terraform")
+  public_key = file("terraform.pub")
 }
 
 resource "aws_security_group" "webserver03" {
