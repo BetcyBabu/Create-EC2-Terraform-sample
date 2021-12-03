@@ -12,7 +12,7 @@ sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_c
 service sshd restart
 
 
-yum install httpd git -y 
+yum install httpd git php -y 
 systemctl enable httpd
 git clone https://github.com/BetcyBabu/sample-website.git  /var/website/
 cp -r /var/website/*  /var/www/html/
